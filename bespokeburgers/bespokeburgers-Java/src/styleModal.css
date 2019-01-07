@@ -1,0 +1,47 @@
+
+.textField {
+
+}
+
+.headerLabel {
+
+    -fx-font-family: "Helvetica";
+	-fx-font-size: 30px;
+	-fx-font-weight: bold;
+	-fx-underline: true;
+	-fx-alignment: center ;
+	-fx-padding: 5;
+
+}
+
+.normalLabel {
+
+    -fx-font-family: "Helvetica";
+	-fx-font-size: 25px;
+	-fx-padding: 5;
+
+}
+
+.orderButton {
+
+	-fx-font-size: 25px;
+
+
+}
+
+.redButton {
+
+    -fx-font-family: "Helvetica";
+	-fx-background-color: #FF0000;
+	-fx-font-size: 25px;
+	-fx-padding: 5;
+
+	-fx-highlight-fill: #B22222;
+	-fx-background-insets: 0 0 -1 0, 0, 1, 2;
+
+}
+
+.redButton:hover{
+    -fx-background-color:  #B22222;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+}

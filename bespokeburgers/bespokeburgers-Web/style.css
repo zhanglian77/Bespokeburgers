@@ -1,0 +1,229 @@
+html, body {
+  	height: 100%;
+ 	margin: 0; 	
+}
+
+.container {
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: 'Fira Sans';
+}
+
+
+.header {
+	background-color: #4C1130;
+	width: 100%;
+	height: 65px;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	flex-shrink: 0;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	margin: 10px;
+}
+
+h2 {
+	color: #FFD700;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	margin: 0 auto;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.content {
+	background-image: url("blurredBurger.png");
+	background-repeat: no-repeat;
+	flex: 1;
+	margin-top: 65px;
+	margin-bottom: 50px;
+  	overflow: auto;
+  	font-family: 'Fira Sans';
+}
+
+.footer {
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	height: 50px;
+	background-color: #4C1130;
+	flex-shrink: 0;
+}
+
+
+ form {
+    margin: 0 auto;
+   	width: 50%; 
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    box-sizing: border-box; 
+    margin-bottom: 50px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    font-size: 12px;
+    margin-left: 0px;
+   	margin-right: 5px; 
+    padding: 5px;
+    color: #FFD700;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.mustard {
+	font-size: 12px;
+    color: #FFD700;
+}
+
+
+select  {
+  width: 100%;
+  display: inline;
+  text-align: right;
+  border: 1px solid #eeeeee;
+  margin-bottom: 10px; 
+  outline: none;
+  height: 25px;
+}  
+
+ .cost {
+	width: 50%;
+	height: 20px;
+	 display: inline; 
+	margin-bottom: 10px;
+	text-align: right;
+	float: right;
+	clear:both;
+} 
+
+#name {
+	width: 100%;
+  display: inline;
+  text-align: left;
+  border: 1px solid #eeeeee;
+  margin-bottom: 10px; 
+  outline: none;
+  height: 20px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+.input-group input[type='button'] {
+  background-color: #eeeeee;
+  min-width: 15%;
+  width: auto; 
+  transition: all 300ms ease;
+  height: 25px;
+  border: none;
+  
+}
+
+.input-group .button-minus,
+.input-group .button-plus {
+  	font-weight: bold;
+  	height: 20px;
+  	padding: 0;
+  	width: 10px;
+ 	position: relative;  
+}
+
+ .input-group .quantity-field {
+  position: relative; 
+  height: 23px;
+  left: -6px;
+  text-align: center;
+  width: 25%;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 5px; 
+  resize: vertical;
+  border: none;
+  background-color: white;
+} 
+
+  .button-plus {
+  left: -11px;
+} 
+ 
+
+.textMain {
+	color: white;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-style: bold;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+	background-color: #FFD700;
+	color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+	background-color: black;
+	color: white;
+}
+
+#orderButton {
+	background-color: #FFD700;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+	clear: both;
+	margin-top: 20px;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#successfulOrder {
+	padding: 20px;
+	clear: both;
+}
+
+#orderAgain {
+	margin: 0 auto;
+	text-align: center;
+}

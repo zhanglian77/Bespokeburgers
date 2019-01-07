@@ -1,0 +1,24 @@
+Somewhere on the server side there will be the generation of order numbers.
+Order numbers will be based on the most recent order in the database.
+If that order was made in the previous day, start order numbers from 0.
+Otherwise, it'll be that order number +1
+
+The UI classes will need additional methods to handle UI elements. These were not included in the class diagram.
+
+When calling methods on the UI objects from other objects, you may encounter this exception message:
+	java.lang.IllegalStateException: Not on FX application thread;
+This happens because we are using multiple threads, and JavaFX is not at all thread safe.
+The solution is to wrap the following around the call to those methods: 
+Platform.runLater(()->{
+	//the method call here
+});
+
+
+We may want to have some way to indicate to the store if there are connection issues to the server
+	(i.e. cannot establish connection when first running or connection drops after it was established)
+	
+	
+ServerConnection 57 > Server 88 (null pointer on DRGSTR from web)
+
+
+Server should calculate final price!
